@@ -169,7 +169,7 @@ h3(#Reconnect_Edge_Tool). Reconnect Edge Tool
 
 A _Reconnect Edge_ tool allows the user to change the end of a relationship by moving it directly from the diagram.
 
-Let's create a reconnect edge tool to change the _father_ and the _mother_ of a Person.
+Let's create a _Reconnect Edge_ to change the _father_ and the _mother_ of a Person.
 
 Right click on the _Section_ and select the menu 'New Element Edition > Reconnect Edge'
 
@@ -200,17 +200,17 @@ To see the result have a look on the commit : @e284dac Reconnect edge tool@
 
 h3(#Delete_Element_Tool). Delete Element Tool
 
-A Delete Element tool specifies which actions have to be performed when the user hits the delete key on an diagram element.
+A _Delete Element_ tool specifies which actions have to be performed when the user hits the delete key on an diagram element.
 
 It is necessary on elements which deletion can't be interpreted by Sirius (for example edges) or if you need to perform specific actions.
 
-Let's create a delete element tool to specify what to do when the user deletes a paretal relation.
+Let's create a _Delete Element_ to specify what to do when the user deletes a paretal relation.
 
-Right click on the Section and select the menu 'New Element Edition > Delete Element'
+Right click on the _Section_ and select the menu 'New Element Edition > Delete Element'
 
 !./images/sirius_tuto2_06-01.png!
 
-Associate the fatherEdge to this delete tool.
+Associate the _fatherEdge_ to this Delete tool.
 
 !./images/sirius_tuto2_06-02.png!
 
@@ -227,11 +227,11 @@ To see the result have a look on the commit : @7395295 Delete element tool@
 
 h3(#Direct_Edit_Label_Tool). Direct Edit Label Tool
 
-A Direct Edit Label specifies how to interpret the modification of graphical object's label in order to modify the model. 
+A _Direct Edit Label_ tool specifies how to interpret the modification of graphical object's label in order to modify the model. 
 
-Let's create a Direct Edit Label to change the name of a Person directly from the diagram.
+Let's create a _Direct Edit Label_ to change the name of a Person directly from the diagram.
 
-Right click on the Section and select the menu 'New Element Edition > Direct Edit Label'
+Right click on the _Section_ and select the menu 'New Element Edition > Direct Edit Label'
 
 !./images/sirius_tuto2_07-01.png!
 
@@ -239,7 +239,7 @@ Associate this tool to the objects which have a name: _ManNode_ and _WomanNode_
 
 !./images/sirius_tuto2_07-02.png!
 
-This tool comes with a mask that creates variables depending on the label's value. By default, the mask is set to {O}, which means that the variable named _0_ will contain the full value of the label.  
+This tool comes with a mask that creates variables depending on the label's value. By default, the mask is set to _{O}_, which means that the variable named _0_ will contain the full value of the label.  
 
 Create a _Set_ to indicate the feature of the edited object that will be modified (_name_) and the value to assign (_var:0_).
 
