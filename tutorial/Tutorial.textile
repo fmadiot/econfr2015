@@ -257,13 +257,50 @@ Copy, paste and update this tool to create a delete tool for _mother_ relationsh
 
 To see the result have a look on the commit : @7395295 Delete element tool@
 
+h3(#Direct_Edit_Label_Tool). Direct Edit Label Tool
+
+A Direct Edit Label specifies how to interpret the modification of graphical object's label in order to modify the model. 
+
+Let's create a Direct Edit Label to change the name of a Person directly from the diagram.
+
+Right click on the Section and select the menu 'New Element Edition > Direct Edit Label'
+
+!./images/sirius_tuto2_07-01.png!
+
+Associate this tool to the objects which have a name: _ManNode_ and _WomanNode_
+
+!./images/sirius_tuto2_07-02.png!
+
+This tool comes with a mask that creates variables depending on the label's value. By default, the mask is set to {O}, which means that the variable named _0_ will contain the full value of the label.  
+
+Create a _Set_ to indicate the feature of the edited object that will be modified (_name_) and the value to assign (_var:0_).
+
+!./images/sirius_tuto2_07-03.png!
+
+To see the result have a look on the commit : @05812f4 Direct edit label tool@
+
 h3(#SVG). SVG
+
+Sirius supports SVG images to improve the quality of the diagrams.
+
+Because the current designer uses PNG images, resizing a Man or Woman on a diagram causes the pixelation of images.
+
+!./images/sirius_tuto2_08-01.png!
+
+Add _man.svg_ and _woman.svg_ in the _icons_ folder. TODO These SVG images are available on TODO.
+
+!./images/sirius_tuto2_08-02.png!
+
+Then replace these PNG images set to the styles of _ManNode_ and _WomanNode_ by SVG images. 
+
+!./images/sirius_tuto2_08-03.png!
+
+Close and re-open the diagram to allow Sirius to take the modification into account: now the images are no more pixelated.
+
+!./images/sirius_tuto2_08-04.png!
 
 To see the result have a look on the commit : @5a75b59 SVG@
 
-h3(#Direct_Edit_Label_Tool). Direct Edit Label Tool
-
-To see the result have a look on the commit : @05812f4 Direct edit label tool@
 
 h3(#Style_Customization). Style Customization
 
