@@ -6,8 +6,8 @@ This tutorial explains how to use advanced features of Sirius:
 * "Edge Creation Tool with preconditions":#Edge_Creation_Tool
 * "Reconnect Edge Tool":#Reconnect_Edge_Tool
 * "Delete Element Tool":#Delete_Element_Tool
-* "SVG images":#SVG
 * "Direct Edit Label Tool":#Direct_Edit_Label_Tool
+* "SVG images":#SVG
 * "Style Customization":#Style_Customization
 * "Layers":#Layers
 * "Filters":#Filters
