@@ -100,9 +100,9 @@ Now you can create a diagram on the Family object: menu _New Representation_.
 
 h2. Start the tutorial
 
-The first step of this tutorial consists in completing the basic modeler with a tool to create Women also.
+The first step of this tutorial consists in completing the basic modeler with a tool to create _Women_ also.
 
-Copy and paste the tool CreateMan, then replace Man by Woman:
+Copy and paste the tool _CreateMan_, then replace _Man_ by _Woman_:
 * in the *Id* of the tool
 * in the *Node Mappings* of the tool (use the wizard to select WomanNode)  
 * in the *Create Instance* operation (under the Begin section)
@@ -111,17 +111,15 @@ Copy and paste the tool CreateMan, then replace Man by Woman:
 
 h3(#Edge_Creation_Tool). Edge Creation Tool
 
-An Edge Creation tool allows the user to create relationships directly from the diagram, by using the palette.
+An _Edge Creation_ tool allows the user to create relationships directly from the diagram, by using the palette.
 
-Let's use this tool to allow the user to set the father and the mother of a person.
+Let's use this tool to set the father and the mother of a Person.
 
-Let's use this tool to allow the user to set the father and the mother of a person.
-
-Right click on the Section and select the menu 'New Element Creation > Edge Creation'
+Right click on the _Section_ and select the menu 'New Element Creation > Edge Creation'
 
 !./images/sirius_tuto2_04-01.png!
 
-Give an Id to this tool (setFather) and associate it to fatherEdge, the Edge Mapping which defines the father graphical relation.
+Give an Id to this tool (setFather) and associate it to _fatherEdge_, the _Edge Mapping_ which defines the _father_ graphical relation.
 
 !./images/sirius_tuto2_04-02.png!
 
@@ -165,21 +163,19 @@ With this precondition, the tool will prevent the creation of forbidden links by
 
 Then copy, paste and update this tool to create the _setMother_ tool.
 
-h3. Precondition
-
 To see the result have a look on the commit : @f70af26 Edge creation tool precondition@
 
 h3(#Reconnect_Edge_Tool). Reconnect Edge Tool
 
-A Reconnect Edge tool allows the user to change the end of a relationship by moving it directly from the diagram.
+A _Reconnect Edge_ tool allows the user to change the end of a relationship by moving it directly from the diagram.
 
-Let's create a reconnect edge tool to change the father and the mother of a person.
+Let's create a reconnect edge tool to change the _father_ and the _mother_ of a Person.
 
-Right click on the Section and select the menu 'New Element Edition > Reconnect Edge'
+Right click on the _Section_ and select the menu 'New Element Edition > Reconnect Edge'
 
 !./images/sirius_tuto2_05-01.png!
 
-Associate the fatherEdge to this reconnect tool.
+Associate the _fatherEdge_ to this reconnect tool.
 
 !./images/sirius_tuto2_05-02.png!
 
@@ -196,34 +192,6 @@ Then create a _Change Context_ and set its expression to _var:element_ (the pers
 Finally, create a _Set_ to assign the new selected parent (_var:target_) as _father_ of this person.
 
 !./images/sirius_tuto2_05-03.png!
-
-Copy, paste and update this tool to create a reconnect tool for _mother_ relationship.
-
-A Reconnect Edge tool allows the user to change the end of a relationship by moving it directly from the diagram.
-
-Let's create a reconnect edge tool to change the father and the mother of a person.
-
-Right click on the Section and select the menu 'New Element Edition > Reconnect Edge'
-
-sirius_tuto2_05_01.png
-
-Associate the fatherEdge to this reconnect tool.
-
-sirius_tuto2_05_02.png
-
-This tool comes with six variables:
-* **source**: the object currently attached to the moved end
-* **target**: the object going to be attached to the moved end
-* **sourceView**: the graphical object representing source
-* **targetView**: the graphical object representing target
-* **element**: the object attached to the other end
-* **elementView**: the graphical object representing element
-
-Then create a _Change Context_ and set its expression to _var:element_ (the person who will change its father) 
-
-Finally, create a _Set_ to assign the new selected parent (_var:target_) as _father_ of this person.
-
-sirius_tuto2_05-03.png
 
 Copy, paste and update this tool to create a reconnect tool for _mother_ relationship.
 
@@ -244,7 +212,7 @@ Right click on the Section and select the menu 'New Element Edition > Delete Ele
 
 Associate the fatherEdge to this delete tool.
 
-!./images/sirius_tuto2_06-02.png
+!./images/sirius_tuto2_06-02.png!
 
 When deleting a edge, the variable **element** refers to the source of the relationship.
 
