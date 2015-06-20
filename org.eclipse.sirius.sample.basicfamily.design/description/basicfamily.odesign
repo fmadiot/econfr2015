@@ -79,17 +79,6 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-         <ownedTools xsi:type="tool:EdgeCreationDescription" name="setFather" precondition="[preSource&lt;>preTarget and not preSource.children->includes(preTarget)/]" edgeMappings="//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Men']/@edgeMappings[name='fatherEdge']">
-            <sourceVariable name="source"/>
-            <targetVariable name="target"/>
-            <sourceViewVariable name="sourceView"/>
-            <targetViewVariable name="targetView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
-                <subModelOperations xsi:type="tool:SetValue" featureName="father" valueExpression="var:target"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
           <ownedTools xsi:type="tool_1:ReconnectEdgeDescription" name="reconnectFather">
             <source name="source"/>
             <target name="target"/>
@@ -110,6 +99,17 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
                 <subModelOperations xsi:type="tool:Unset" featureName="father"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setFather" precondition="[preSource&lt;>preTarget and not preSource.children->includes(preTarget)/]" edgeMappings="//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Men']/@edgeMappings[name='fatherEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool:SetValue" featureName="father" valueExpression="var:target"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -199,6 +199,8 @@
       <ownedColumnMappings name="fatherCol" headerLabelExpression="Father" featureName="father" labelExpression="[if father.oclIsUndefined() then '' else father.name endif/]"/>
       <ownedColumnMappings name="motherCol" headerLabelExpression="Mother" featureName="mother" labelExpression="[if mother.oclIsUndefined() then '' else mother.name endif/]"/>
       <ownedColumnMappings name="childrenCol" headerLabelExpression="Children" featureName="name" labelExpression="[children->size()/]"/>
+      <ownedColumnMappings name="cousinsCol" headerLabelExpression="Cousins" featureName="name" labelExpression="service:getCousinsNumber"/>
     </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="org.eclipse.sirius.sample.basicfamily.design.services.FamilyServices"/>
   </ownedViewpoints>
 </description:Group>
