@@ -169,9 +169,9 @@ Associate the _fatherEdge_ to this Delete tool.
 
 !./images/sirius_tuto2_06-02.png!
 
-When deleting a edge, the variable **element** refers to the source of the relationship.
+When deleting an edge, the variable **element** refers to the source of the relationship.
 
-So, create a _Change Context_ and set its expression to _var:element_ (the person which is the children). Then create a _Unset_ on the feature _father_ to remove this relation.
+So, create a _Change Context_ and set its expression to @var:element@ (the person which is the children). Then create a _Unset_ on the feature _father_ to remove this relation.
 
 
 !./images/sirius_tuto2_06-03.png!
@@ -194,9 +194,9 @@ Associate this tool to the objects which have a name: _ManNode_ and _WomanNode_
 
 !./images/sirius_tuto2_07-02.png!
 
-This tool comes with a mask that creates variables depending on the label's value. By default, the mask is set to {0}, which means that the variable named _0_ will contain the full value of the label.  
+This tool comes with a mask that creates variables depending on the label's value. By default, the mask is set to @{0}@, which means that the variable named _0_ will contain the full value of the label.  
 
-Create a _Set_ to indicate the feature of the edited object that will be modified (_name_) and the value to assign (_var:0_).
+Create a _Set_ to indicate the feature of the edited object that will be modified (name) and the value to assign (@var:0@).
 
 !./images/sirius_tuto2_07-03.png!
 
@@ -214,7 +214,7 @@ There is _man.svg_ and _woman.svg_ in the _icons_ folder.
 
 !./images/sirius_tuto2_08-02.png!
 
-Then replace these PNG images set to the styles of _ManNode_ and _WomanNode_ by SVG images. 
+In the _Workspace Path_ property of the _Workspace Images_ associated to _ManNode_ and _WomanNode_ , replace the PNG images by these SVG images. 
 
 !./images/sirius_tuto2_08-03.png!
 
