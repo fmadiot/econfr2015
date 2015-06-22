@@ -78,12 +78,12 @@ Give an Id to this tool (setFather) and associate it to _fatherEdge_, the _Edge 
 !./images/sirius_tuto2_04-02.png!
 
 Then define the operations that will be performed by this tool each time the user will click on it. These operations can use four variables that are automatically set by Sirius:
-* **source**: the first object on which the user has clicked (the source of the relation is is going to create)
-* **target**: the second object on which the user has clicked (the target of the relation is is going to 
+* **source**: the first object on which the user has clicked (the source of the relation he is going to create)
+* **target**: the second object on which the user has clicked (the target of the relation he is going to create)
 * **sourceView**: the graphical object representing the source
 * **targetView**: the graphical object representing the target
 
-Under the _Begin_ object, create a _Change Context_ and set its _Browse Expression_ to _var:source_ in order to define the execution context of the next operations.
+Under the _Begin_ object, create a _Change Context_ and set its _Browse Expression_ to @var:source@ in order to define the execution context of the next operations.
 
 !./images/sirius_tuto2_04-03.png!
 
@@ -132,34 +132,6 @@ Right click on the _Section_ and select the menu New Element Edition > Reconnect
 !./images/sirius_tuto2_05-01.png!
 
 Associate the _fatherEdge_ to this reconnect tool.
-
-!./images/sirius_tuto2_05-02.png!
-
-This tool comes with six variables:
-* **source**: the object currently attached to the moved end
-* **target**: the object going to be attached to the moved end
-* **sourceView**: the graphical object representing source
-* **targetView**: the graphical object representing target
-* **element**: the object attached to the other end
-* **elementView**: the graphical object representing element
-
-Then create a _Change Context_ and set its expression to _var:element_ (the person who will change its father) 
-
-Finally, create a _Set_ to assign the new selected parent (_var:target_) as _father_ of this person.
-
-!./images/sirius_tuto2_05-03.png!
-
-Copy, paste and update this tool to create a reconnect tool for _mother_ relationship.
-
-A Reconnect Edge tool allows the user to change the end of a relationship by moving it directly from the diagram.
-
-Let's create a reconnect edge tool to change the father and the mother of a person.
-
-Right click on the Section and select the menu New Element Edition > Reconnect Edge
-
-!./images/sirius_tuto2_05-01.png!
-
-Associate the fatherEdge to this reconnect tool.
 
 !./images/sirius_tuto2_05-02.png!
 
