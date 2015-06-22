@@ -17,11 +17,9 @@ This tutorial explains how to use advanced features of Sirius:
 * "Table":#Table
 * "Java Services":#Service
 
-The instructions start from a basic modeling tool that is the result of the Sirius "Starter Tutorial":https://wiki.eclipse.org/Sirius/Tutorials/4MinTutorial. This starting modeling tool just allows you to create diagrams which represent Men and Women linked by parental relationships. From this diagram you can also use the palette to create Men.
+The instructions will guide you extending the basic modeling tool that is the result of the Sirius "Starter Tutorial":https://wiki.eclipse.org/Sirius/Tutorials/4MinTutorial. This starting modeling tool just allows you to create diagrams which represent Men and Women linked by parental relationships. From this diagram you can also use the palette to create Men. The advanced modeling workbench created with this new tutorial will complete the diagrams with many edition and visualization tools and new kinds of representations. 
 
-These instructions are based on a simple Domain Model which describes basic concepts about families.
-
-The modeling workbench created with this tutorial will allow users to visualize the members of a family and their parental relationships on a graphical diagram. It will also provide tools to edit the model from the diagram.
+These instructions are based on the same simple Domain Model which describes basic concepts about families.
 
 !https://wiki.eclipse.org/images/1/16/Sirius_4mtuto_01.png!
 
