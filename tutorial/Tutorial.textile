@@ -218,7 +218,7 @@ In the _Workspace Path_ property of the _Workspace Images_ associated to _ManNod
 
 !./images/sirius_tuto2_08-03.png!
 
-Finally, set a predefined size to adapt the SVG image to the same size than the 32x32 PNG image (here enter 4).
+Finally, set a predefined size to adapt the SVG image to the same size than the 32x32 PNG image (here enter @4@).
 
 !./images/sirius_tuto2_08-04.png!
 
@@ -290,7 +290,7 @@ Let's create two layers: one for the Men and one for the Women.
 
 Right click on _Persons diagram_ and select the menu _New Diagram Element > Additional Layer_. 
 
-!./images/sirius_tuto2_10-01.png!
+!./images/sirius_tuto2_10-03.png!
 
 Call this _Layer_ @Men@ and check the option _Active by default_.
 
@@ -298,7 +298,7 @@ Call this _Layer_ @Men@ and check the option _Active by default_.
 
 Create a _Section_ in this layer then drag and drop all the elements related to the Man type into this layer.
 
-!./images/sirius_tuto2_10-03.png!
+!./images/sirius_tuto2_10-01.png!
 
 Create a second _Layer_ @Women@ and drag and drop all the elements related to the Woman type.
 
@@ -328,7 +328,7 @@ Then create a _Mapping Filter_.
 
 !./images/sirius_tuto2_11-02.png!
 
-Associate _ManNode_ and _WomanNode_ to this filter and define the _Semantic Condition Expression_ : _[children->size()>0/]_
+Associate _ManNode_ and _WomanNode_ to this filter and define the _Semantic Condition Expression_ : @[children->size()>0/]@
 
 !./images/sirius_tuto2_11-03.png!
 
@@ -361,11 +361,11 @@ Set the properties of this rule:
 
 !./images/sirius_tuto2_12-03.png!
 
-Then create an _Audit_ (a condition corresponding to this rule) with the expression _[not children->includes(father)/]_.
+Then create an _Audit_ (a condition corresponding to this rule) with the expression @[not children->includes(father)/]@.
 
 !./images/sirius_tuto2_12-04.png!
 
-To test this rule, introduce an error in the model with the Property View: set the father of a Man to its son.
+To test this rule, use the _Property View_ to introduce an error in the model: set the father of a Man to its son.
 
 !./images/sirius_tuto2_12-05.png!
 
@@ -389,7 +389,7 @@ Right-click on the _Rule_ and select the menu 'New > Fix'.
 
 !./images/sirius_tuto2_13-01.png!
 
-Set the _name_ Unset father to this _Fix_ and create a _Begin_. Then create a _Unset_ and enter _father_ in the _Feature name_.
+Set the _name_ @Unset father@ to this _Fix_ and create a _Begin_. Then create a _Unset_ and enter @father@ in the _Feature name_.
 
 !./images/sirius_tuto2_13-02.png!
 
